@@ -9,6 +9,9 @@ module.exports = {
     optimization: {
         minimizer: [ new OptimizeCssAssetsPlugin() ]
     },
+    entry: {
+        app: ['./src/index.js']
+    },
     output: {
         filename: 'main.[contentHash].js'
     },
